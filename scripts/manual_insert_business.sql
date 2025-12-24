@@ -1,0 +1,25 @@
+-- 1. Get your User ID from the Authentication tab (e.g., '12345678-1234-1234-1234-1234567890ab')
+
+-- 2. Run this command (REPLACE THE ID AND EMAIL!)
+-- INSERT INTO public.businesses (id, user_id, email, name, phone, address, verified)
+-- VALUES (
+--   'YOUR_USER_ID_HERE',
+--   'YOUR_USER_ID_HERE',
+--   'your-email@example.com',
+--   'My Business Name',
+--   '1234567890',
+--   '123 Main St',
+--   true
+-- );
+
+-- Example:
+-- INSERT INTO public.businesses (id, user_id, email, name, phone, address, verified)
+-- VALUES (
+--   'd0c8301c-1234-4567-890a-bcdef1234567',
+--   'd0c8301c-1234-4567-890a-bcdef1234567',
+--   'test@example.com',
+--   'Test Catering',
+--   '9999999999',
+--   'Test Address',
+--   true
+-- );

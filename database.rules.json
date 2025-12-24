@@ -1,0 +1,24 @@
+{
+    "rules": {
+        "businesses": {
+            "$businessId": {
+                ".read": "auth != null",
+                ".write": "auth != null"
+            }
+        },
+        "customers": {
+            "$userId": {
+                ".read": "auth != null && auth.uid == $userId",
+                ".write": "auth != null && auth.uid == $userId"
+            }
+        },
+        "orders": {
+            ".read": "auth != null",
+            ".write": "auth != null",
+            "$orderId": {
+                ".read": "auth != null",
+                ".write": "auth != null"
+            }
+        }
+    }
+}
